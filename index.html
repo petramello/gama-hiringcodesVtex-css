@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="my-css.css" rel="stylesheet"/>
         <title>Document</title>
         <style>
             /*div {*/
@@ -87,9 +88,9 @@
             /*fator de encolhimento filho 1: (2 * tamanho base do elemnto) / (2 * tamanho base do elemnto) + tamanho base do elemnto*/
             /*fator final do encolhimento: fator de encolhimento filho 1 * espaço sobrando*/
 
-            .my-div {
-                color: darkblue;
-            }
+            /*.my-div {*/
+            /*    color: darkblue;*/
+            /*}*/
 
             .my-div::first-letter {
                 font-size: 30px;
@@ -108,15 +109,15 @@
                 background-color: aquamarine;
             }
 
-            span[gama-academy] {
-                color: lawngreen;
-            }
+            /*span[gama-academy] {*/
+            /*    color: lawngreen;*/
+            /*!*}*!*/
 
         </style>
     </head>
 
     <body>
-        <div class="my-div">
+        <div style="color: darkblue" class="my-div">
            Olá, mundo!
         </div>
         <input id="my-input">
