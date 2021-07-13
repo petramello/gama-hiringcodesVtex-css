@@ -62,20 +62,20 @@
             /*    font-size: 10px;*/
             /*}*/
 
-            .flex-div {
-                display: flex;
-                width: 500px;
-            }
-            .child-div1 {
-                border: solid 1px black;
-                flex-basis: 100px;
-                flex-grow: 2;
-            }
-            .child-div2 {
-                border: solid 1px black;
-                flex-basis: 100px;
-                flex-grow: 1;
-            }
+            /*.flex-div {*/
+            /*    display: flex;*/
+            /*    width: 500px;*/
+            /*}*/
+            /*.child-div1 {*/
+            /*    border: solid 1px black;*/
+            /*    flex-basis: 100px;*/
+            /*    flex-grow: 2;*/
+            /*}*/
+            /*.child-div2 {*/
+            /*    border: solid 1px black;*/
+            /*    flex-basis: 100px;*/
+            /*    flex-grow: 1;*/
+            /*}*/
 
             /*largura total: 500px*/
             /*cada div inicial: 200px*/
@@ -87,27 +87,34 @@
             /*fator de encolhimento filho 1: (2 * tamanho base do elemnto) / (2 * tamanho base do elemnto) + tamanho base do elemnto*/
             /*fator final do encolhimento: fator de encolhimento filho 1 * espaço sobrando*/
 
+            .my-div {
+                color: darkblue;
+            }
+
+            .my-div::first-letter {
+                font-size: 30px;
+            }
+
+            #my-input {
+                background-color: aqua;
+            }
+
+            #my-input:hover {
+                background-color: aquamarine;
+            }
+
+            span[gama-academy] {
+                color: lawngreen;
+            }
+
         </style>
     </head>
 
     <body>
-        <div class="flex-div">
-            <div class="child-div1">
-                1
-            </div>
-            <div class="child-div2">
-                2
-            </div>
+        <div class="my-div">
+           Olá, mundo!
         </div>
-    </body>
-</html>
-
-
-</div>
-    </body>
-</html>
-
-
-</div>
+        <input id="my-input">
+        <span gama-academy>Gama Academy</span>
     </body>
 </html>
