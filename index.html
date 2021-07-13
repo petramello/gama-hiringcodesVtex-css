@@ -92,35 +92,47 @@
             /*    color: darkblue;*/
             /*}*/
 
-            .my-div::first-letter {
-                font-size: 30px;
-            }
+            /*.my-div::first-letter {*/
+            /*    font-size: 30px;*/
+            /*}*/
 
-            input {
-                background-color: pink;
-            }
-            /*seletor menos especifico que o id, por isto nao aparece a cor*/
+            /*input {*/
+            /*    background-color: pink;*/
+            /*}*/
+            /*!*seletor menos especifico que o id, por isto nao aparece a cor*!*/
 
-            #my-input {
-                background-color: aqua;
-            }
+            /*#my-input {*/
+            /*    background-color: aqua;*/
+            /*}*/
 
-            #my-input:hover {
-                background-color: aquamarine;
-            }
+            /*#my-input:hover {*/
+            /*    background-color: aquamarine;*/
+            /*}*/
 
             /*span[gama-academy] {*/
             /*    color: lawngreen;*/
             /*!*}*!*/
 
+            .my-div {
+                height: 15px;
+                background-color: aquamarine;
+                color: pink;
+            }
+
+            @media (max-width: 600px) and (min-width: 500px) {
+                .my-div {
+                    background-color: greenyellow;
+                }
+            }
+
         </style>
     </head>
 
     <body>
-        <div style="color: darkblue" class="my-div">
-           Olá, mundo!
+        <div class="my-div">
+           Está ficando apertado
         </div>
-        <input id="my-input">
-        <span gama-academy>Gama Academy</span>
+<!--        <input id="my-input">-->
+<!--        <span gama-academy>Gama Academy</span>-->
     </body>
 </html>
